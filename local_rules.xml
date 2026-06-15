@@ -1,0 +1,15 @@
+<group name="local,sysmon,windows_custom">
+
+  <!-- PowerShell Detection -->
+  <rule id="100100" level="10">
+    <if_sid>92021</if_sid>
+    <description>Custom Alert: PowerShell Discovery Activity Detected</description>
+  </rule>
+
+  <!-- Failed Login Detection -->
+  <rule id="100101" level="12">
+    <if_sid>60122</if_sid>
+    <description>Custom Alert: Windows Failed Login Detected</description>
+  </rule>
+
+</group>
